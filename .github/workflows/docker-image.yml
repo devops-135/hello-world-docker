@@ -23,4 +23,4 @@ jobs:
           password: "dBsGc38dn@vmnRJ"
 
       - name: Push the Docker image
-        run: docker push devops908/hello-world-application
+        run: docker push devops908/${{ github.event.head_commit.message }}
